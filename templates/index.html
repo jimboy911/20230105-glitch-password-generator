@@ -1,16 +1,10 @@
-{% extends "base.html" %}
-{% block content %}
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <div class="jumbotron">
-          <h1 class="display-4">Random Password Generator</h1>
-          <p class="lead">Random Password Generator - List of Generated Passwords.</p>
-          <hr class="my-4">
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <a class="btn btn-primary btn-lg" href="javascript:window.location.reload(true)" role="button">Reload</a>
-        </div>
-      </div>
-    </div>
-  </div>
-{% endblock %}
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <!-- above is a variable title, which we'll define in the app.py file -->
+    </head>
+    <body>
+        <h1>Hello {{ username }}</h1>
+        <!-- above is a variable title, which we'll define in the app.py file -->
+    </body>
+</html>
