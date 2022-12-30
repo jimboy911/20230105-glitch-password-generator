@@ -4,9 +4,11 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/') #if i remove this - it stops working
+@app.route('/index') #not sure why i have to add this to get it to readd my index.html file correctly.
 def index():
-    return render_template('index.html', title='Welcome', username=name)
+    list_of_passwords = "List of Passwords Here!"
+    return render_template('index.html', title='Password Generator', password_list=list_of_passwords)
 
 
 if __name__ == '__main__':
