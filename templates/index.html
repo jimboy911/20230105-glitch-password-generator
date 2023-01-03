@@ -2,6 +2,8 @@
     <head>
         <title>{{ title }}</title>
         <!-- above is a variable title, which we'll define in the app.py file in the return section -->
+        <!-- referencing CSS file -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     </head>
     <body>
         <h1>Password Generator v2.0!</h1>
