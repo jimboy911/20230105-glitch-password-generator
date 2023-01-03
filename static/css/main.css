@@ -13,9 +13,8 @@ body {
   margin: 1rem;
   font-family: sans-serif;
   line-height: 1.5;
-  color: rgb #331177;
+  color: green;
+  /* changed text color (green) */
   background-color: #000000;
   /* added background color (black) */
 }
-
-#green {color:green;}
