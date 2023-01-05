@@ -1,4 +1,4 @@
-/* from practicing-css glitch */
+/* copied and modified code from practicing-css glitch */
 
 html {
   box-sizing: border-box;
@@ -11,10 +11,10 @@ html {
 
 body {
   margin: 1rem;
-  font-family: sans-serif;
+  font-family: monospace;
   line-height: 1.5;
   color: green;
-  /* changed text color (green) */
+  /* changed text color (green or #00ff00) */
   background-color: #000000;
   /* added background color (black) */
 }

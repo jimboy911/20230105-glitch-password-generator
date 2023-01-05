@@ -40,9 +40,18 @@ def passwordGenerator():
 @app.route('/index') #not sure why i have to add this to get it to readd my index.html file correctly.
 def index():
     list_of_passwords = "List of Passwords Here!"
-    return render_template('index.html', title='Password Generator v2.0', password_1=passwordGenerator(), password_2=passwordGenerator(), password_3=passwordGenerator(), password_4=passwordGenerator(), password_5=passwordGenerator())
+    return render_template(
+      'index.html', 
+      title='Password Generator v2.0', 
+      password_1=passwordGenerator(), 
+      password_2=passwordGenerator(), 
+      password_3=passwordGenerator(), 
+      password_4=passwordGenerator(), 
+      password_5=passwordGenerator()
+    )
 #to get the html template to print the passwords on different lines, i had to create 5 different variables that ran the password generator function multiple times.
 #there might be a way to do this cleaner
+#looks like you can separate them onto different lines of code like this so it's easier to read
   
 if __name__ == '__main__':
     app.run()
